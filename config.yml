@@ -1,0 +1,67 @@
+# - DailyRewards Configuration Guide -
+#
+# Here's an example reward configuration.
+#
+# rewards:
+#   "hourly":
+#    name: "&9Hourly Reward"
+#    delay: HOURLY
+#    x: 1
+#    y: 1
+#   
+#    items:
+#      "diamond:0": 64
+#      "wool:9": 32
+#
+#    commands: 
+#    - "broadcast %player% has used his hourly reward."
+#
+#
+# Looks complicated? Let's break it down.
+# Rewards have multiple properties, an ID, a name, a delay, a position and a list of items.
+#
+# ID -> It's the path of your reward, in this example, "hourly", it's used to IDentify the reward in the database.
+# name -> This is the name of the item, the displayed name in the GUI.
+# delay -> This is the delay at which users can use it. Available: HOURLY, DAILY, WEEKLY, MONTHLY, YEARLY, ONCE
+# x -> The X position of the reward in the GUI. (Starts at 0)
+# y -> The Y position of the reward in the GUI. (Starts at 0)
+# items -> The list of items given by the reward.
+# commands -> The commands to run upon redeeming.
+#
+# The items are defined as such:
+# "material:data": count
+# Example: "wool:6": 16 -> that would give 16 pink wool.
+#
+# The commands are defined as such:
+# - "COMMAND"
+# You can use the wildcard %player%
+
+#The SQL connection information.
+host: "localhost"
+port: 3306
+database: "dailyrewards"
+username: "spigot"
+password: "spigot123"
+
+#The command/response prefix
+prefix: "&8[&bDaily&6Rewards&8] "
+
+#The first line of lore displayed under the used reward
+already_used: "&cYou have already used this."
+
+#The lore lines of all delay types
+lore_once: "You can only use this once"
+lore_hourly: "You must wait an hour before using this again."
+lore_daily: "You must wait a day before using this again."
+lore_weekly: "You must wait a week before using this again."
+lore_monthly: "You must wait a month before using this again."
+lore_yearly: "You must wait a year before using this again."
+
+#The height of the rewards GUI
+gui_height: 3
+
+#The title of the rewards GUI
+gui_title: "&a&lYour Rewards"
+
+#The list of available rewards
+rewards: []
