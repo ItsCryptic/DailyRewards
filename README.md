@@ -7,6 +7,7 @@ Test server: play.venommc.net
 # Commands
 
 /dailyrewards reload
+
 /rewards
 
 # Configuration example 
@@ -19,4 +20,5 @@ That would be how you would set up a command with this plugin so whenever someon
 # Permissions
 
 dailyrewards.reload - Gives permissions to the /dailyrewards reload command!
+
 dailyrewards.rewards - Gives access to the GUI! Players need this permission to open it!
