@@ -22,3 +22,12 @@ That would be how you would set up a command with this plugin so whenever someon
 dailyrewards.reload - Gives permissions to the /dailyrewards reload command!
 
 dailyrewards.rewards - Gives access to the GUI! Players need this permission to open it!
+
+# Support
+
+Join our Discord @ https://discord.gg/s9mQfau for any other questions or concerns!
+
+
+# License
+
+This plugin is licensed under the MIT license
